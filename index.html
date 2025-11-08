@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">  
+          Adam <span>Distrola</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                <a href="#about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">About</a>
+                <a href="#skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Skills</a>
+                <a href="#portfolio" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Portfolio</a>
+                <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+    </header>
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hey I'm <span>Adam</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">I build clean, responsive websites and modern web apps that blend design, functionality, and real-world performance.</p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Building sleek, responsive, and scalable web experiences — one project at a time.</p>
+                <div class="social-links">
+                   <a href="https://www.linkedin.com/in/adam-distrola-14847376" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" 
+                        data-aos="fade-up" 
+                        data-aos-duration="1500" 
+                        data-aos-delay="1300"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i>
+                    </a>
+                </div>
+                <a href="Adam_Resume.pdf"><button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Download CV</button></a>
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="main.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-container">
+           <div class="testimg">
+                <img src="main.jpg" alt="Photo of Adam Distrola" class="about-image">
+            </div>
+        <div class="about-text">
+                <p>Hi, I’m Adam Distrola — a self-taught full-stack web developer with a passion for turning ideas into clean, functional, and visually engaging websites. I specialize in responsive front-end design and SaaS-style full-stack applications, using technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+                <p>I’ve built and deployed real-world projects including Novelmatic, an AI-powered manuscript formatting app; Apex Auto Detailing, a modern business landing page; and Quicksilver Ledger, a dynamic coin melt value calculator.</p>
+                <p>With a background that blends entrepreneurship, design, and technical problem-solving, I focus on building web experiences that are as practical as they are beautiful — crafted to help creators, small businesses, and startups grow online.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section skills-section">
+    
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+    <div class="skill-box">
+      <h3>Core Web Foundations</h3>
+      <ul>
+        <li>HTML5 / Semantic Structure</li>
+        <li>CSS3 / Flexbox / Grid / Animations</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Design / Accessibility</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>Frontend Development</h3>
+      <ul>
+        <li>React.js / Hooks / Components</li>
+        <li>Bootstrap / Tailwind / CSS Modules</li>
+        <li>Redux / Context API</li>
+        <li>D3.js (Data Visualization)</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>Backend Development</h3>
+      <ul>
+        <li>Node.js / Express.js</li>
+        <li>RESTful API Design</li>
+        <li>Authentication (JWT / Sessions)</li>
+        <li>Server Middleware</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>Databases & Tools</h3>
+      <ul>
+        <li>MongoDB / Mongoose (NoSQL)</li>
+        <li>SQL (Basics)</li>
+        <li>Git / GitHub / NPM</li>
+        <li>VS Code / CLI / Debugging</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3>Deployment & DevOps</h3>
+      <ul>
+        <li>Netlify / Vercel / Render / Heroku</li>
+        <li>Environment Variables</li>
+        <li>CI/CD Basics</li>
+        <li>API Integration / JSON</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+   <section id="portfolio" class="section portfolio-section">
+  <h2>Portfolio</h2>
+
+  <div class="portfolio-grid">
+    <!-- Project 1 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/novelmatic.png" alt="Novelmatic – AI manuscript formatter screenshot">
+      </div>
+      <div class="portfolio-content">
+        <h3>Novelmatic</h3>
+        <p>AI-powered web app that converts .DOCX manuscripts into print-ready PDFs for KDP/Ingram. Auth, dashboard, PDF downloads, Stripe, MongoDB.</p>
+      </div>
+      <div class="portfolio-actions">
+        <a href="https://www.novelmatic.com" target="_blank" rel="noopener noreferrer" class="btn">View Site</a>
+        <a href="https://github.com/youruser/novelmatic" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/ApexAuto.png" alt="Apex Auto Detailing landing page screenshot">
+      </div>
+      <div class="portfolio-content">
+        <h3>Apex Auto Detailing</h3>
+        <p>Responsive landing page with service calculator, testimonials, and booking form. Built with HTML/CSS/JS and deployed on shared hosting.</p>
+      </div>
+      <div class="portfolio-actions">
+        <a href="ApexAuto/index.html" target="_blank" rel="noopener noreferrer" class="btn">View Site</a>
+        <a href="https://github.com/youruser/apex-detailing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/QuickSilver.png" alt="Quicksilver Ledger coin melt value app screenshot">
+      </div>
+      <div class="portfolio-content">
+        <h3>Quicksilver Ledger</h3>
+        <p>Static app to calculate real-time metal melt values with clean UI/UX and SEO (sitemap/robots). Vanilla JS + structured data.</p>
+      </div>
+      <div class="portfolio-actions">
+        <a href="CoinValue/index.html" target="_blank" rel="noopener noreferrer" class="btn">View Site</a>
+        <a href="https://github.com/youruser/quicksilver-ledger" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <p class="contact-intro">Have a project, question, or want to see more of my work? Send me a message.</p>
+
+  <form id="contactForm" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="from_name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="repy_to" required>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+  <p id="form-status" style="margin-top:1rem; color:#fff;"></p>
+
+    </section>
+<footer class="footer">&copy; 2025 Adam Distrola. <span>All Rights Reserved.</span></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
